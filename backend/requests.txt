@@ -1,0 +1,12 @@
+signup
+{
+    "username":"abolfal",
+    "password": "abcdef",
+    "email": "abolfal@gmail.com"
+}
+
+signin
+{
+    "username": "abolfal",
+    "password": "abcdef",
+}

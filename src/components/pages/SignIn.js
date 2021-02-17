@@ -2,24 +2,13 @@ import React from 'react'
 // import '../../App.css'
 import './Style.css'
 
-
-export default function SignUp() {
+export default function SignIn() {
 
     return (
         <form className="auth-inner">
-            <h3>Sign Up</h3>
+            <h3>Sign In</h3>
 
             <div className="form-group ">
-                <label>First name</label>
-                <input type="text" className="form-control" placeholder="First name" />
-            </div>
-
-            <div className="form-group">
-                <label>Last name</label>
-                <input type="text" className="form-control" placeholder="Last name" />
-            </div>
-
-            <div className="form-group">
                 <label>Email address</label>
                 <input type="email" className="form-control" placeholder="Enter email" />
             </div>
@@ -29,9 +18,16 @@ export default function SignUp() {
                 <input type="password" className="form-control" placeholder="Enter password" />
             </div>
 
-            <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
+            <div className="form-group">
+                <div className="custom-control custom-checkbox">
+                    <input type="checkbox" className="custom-control-input" id="customCheck1" />
+                    <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
+                </div>
+            </div>
+
+            <button type="submit" className="btn btn-primary btn-block">Submit</button>
             <p className="forgot-password text-right">
-                Already registered <a href="/sign-in">sign in?</a>
+                Forgot <a href="#">password?</a>
             </p>
         </form>
     );
